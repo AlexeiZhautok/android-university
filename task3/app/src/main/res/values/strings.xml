@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task3</string>
+    <string name="enter_first_number">Enter a natural number: </string>
+    <string name="enter_second_number">Enter a natural number: </string>
+    <string name="button_LCM_text">LCM</string>
+    <string name="button_GCD_text">GCD</string>
+    <string name="result_text">Result: </string>
+</resources>

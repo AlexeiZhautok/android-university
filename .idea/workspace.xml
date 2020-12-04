@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c597f264-4e73-4007-b4f7-d1d1d33baab8" name="Default Changelist" comment="" />
+    <list default="true" id="c23a8ede-ff94-46cb-95e6-89a2163f8d5a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1jt0TzWcRicKcAKUEpsI4jstUqP" />
+  <component name="ProjectId" id="1lA11JMuM8ps4QbHS29t8xt5deV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,26 +32,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab1" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c597f264-4e73-4007-b4f7-d1d1d33baab8" name="Default Changelist" comment="" />
-      <created>1604608091700</created>
+      <changelist id="c23a8ede-ff94-46cb-95e6-89a2163f8d5a" name="Default Changelist" comment="" />
+      <created>1607024864307</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604608091700</updated>
+      <updated>1607024864307</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="733" y="159" key="FileChooserDialogImpl" timestamp="1604608115857">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="733" y="159" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604608115857" />
   </component>
 </project>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Задание3</string>
+    <string name="enter_first_number">Введите натуральное число: </string>
+    <string name="enter_second_number">Введите натуральное число: </string>
+    <string name="button_LCM_text">НОК</string>
+    <string name="button_GCD_text">НОД</string>
+    <string name="result_text">Результат: </string>
+</resources>
