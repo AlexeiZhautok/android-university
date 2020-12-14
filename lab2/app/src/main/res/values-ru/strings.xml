@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Задание2</string>
-    <string name="button_text">Добавить</string>
+    <string name="buttonSum">Добавить</string>
     <string name="enter_number">Введите число</string>
-    <string name="zero">0</string>
 </resources>

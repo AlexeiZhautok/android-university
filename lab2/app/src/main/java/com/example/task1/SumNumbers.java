@@ -15,24 +15,28 @@ public class SumNumbers extends AppCompatActivity {
 
     private TextView oldNumber;
     private Button buttonSum;
+    private EditText inputAnswer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sum_numbers);
+        setContentView(R.layout.activity_main);
+
+        Intent intent = getIntent();
+        String firstNumber = intent.getStringExtra(MainActivity.NUM_KEY);
 
         buttonSum = (Button)findViewById(R.id.buttonSum);
+        oldNumber = (TextView)findViewById(R.id.outputNumber);
+        inputAnswer = (EditText)findViewById(R.id.inputNumber);
 
-        oldNumber = (TextView)findViewById(R.id.oldNumber);
-        String firstNumber = getIntent().getStringExtra(MainActivity.NUM_KEY);
         oldNumber.setText(firstNumber);
 
         buttonSum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText inputAnswer = (EditText)findViewById(R.id.addNumber);
                 Intent returnIntent = new Intent();
-                int summa=Integer.valueOf(oldNumber.getText().toString()) + Integer.valueOf(inputAnswer.getText().toString());
-                returnIntent.putExtra("num", Integer.toString(summa));
+                int sum = Integer.parseInt(oldNumber.getText().toString()) + Integer.parseInt(inputAnswer.getText().toString());
+                returnIntent.putExtra("num", Integer.toString(sum));
                 setResult(RESULT_OK, returnIntent);
                 finish();
             }

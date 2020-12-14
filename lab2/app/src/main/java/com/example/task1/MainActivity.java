@@ -17,21 +17,20 @@ public class MainActivity extends AppCompatActivity {
     private EditText writeNumber;
     private Button buttonNum;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        writeNumber = (EditText)findViewById(R.id.writeNumber);
-        buttonNum = (Button)findViewById(R.id.buttonNum);
 
-        buttonNum.setOnClickListener(new View.OnClickListener() {
+        writeNumber = (EditText)findViewById(R.id.inputNumber);
+        buttonNum = (Button)findViewById(R.id.buttonSum);
+
+        buttonNum.setOnClickListener(   new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SumNumbers.class);
-
                 TextView input = (TextView)findViewById(R.id.inputNumber);
-                int firstSum = Integer.valueOf(writeNumber.getText().toString()) + Integer.valueOf(input.getText().toString());
+                int firstSum = Integer.parseInt(writeNumber.getText().toString()) + Integer.parseInt(input.getText().toString());
                 intent.putExtra(NUM_KEY, Integer.toString(firstSum));
                 startActivityForResult(intent, REQUEST_ANSWER);
             }
@@ -41,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if ((requestCode == REQUEST_ANSWER) && (resultCode == RESULT_OK)) {
-            String newNumber = data.getStringExtra(NUM_KEY);
-            TextView input = (TextView)findViewById(R.id.inputNumber);
-            input.setText(newNumber);
-            writeNumber.setText("");
+        if (requestCode == REQUEST_ANSWER) {
+            if (resultCode == RESULT_OK){
+                String newNumber = data.getStringExtra(NUM_KEY);
+                final TextView textView = (TextView) findViewById(R.id.outputNumber);
+                textView.setText(newNumber);
+            }
         }
     }
 
