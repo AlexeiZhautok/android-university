@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nod_settings"
+        android:orderInCategory="1"
+        android:title="@string/nod" />
+    <item
+        android:id="@+id/nok_settings"
+        android:orderInCategory="2"
+        android:title="@string/nok" />
+    <item
+        android:id="@+id/max_settings"
+        android:orderInCategory="3"
+        android:title="@string/max" />
+    <item
+        android:id="@+id/min_settings"
+        android:orderInCategory="4"
+        android:title="@string/min" />
+</menu>

@@ -4,81 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="-24dp"
-    tools:layout_editor_absoluteY="-39dp">
+    tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/inputNumber"
-        style="@style/enteredText"
-        android:layout_width="318dp"
-        android:layout_height="84dp"
-        android:layout_marginBottom="256dp"
-        android:hint="@string/enter_first_number"
-        android:inputType=""
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/firstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="8"
+        android:gravity="center"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/resultView" />
 
     <EditText
-        android:id="@+id/inputSecondNumber"
-        style="@style/enteredText"
-        android:layout_width="318dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="151dp"
-        android:hint="@string/enter_second_number"
-        android:inputType=""
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/secondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="8"
+        android:gravity="center"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/buttonNOK"
-        style="@style/button"
-        android:layout_width="116dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="251dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="48dp"
-        android:text="@string/button_LCM_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/buttonNOD"
-        style="@style/button"
-        android:layout_width="116dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="251dp"
-        android:layout_marginBottom="48dp"
-        android:text="@string/button_GCD_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
 
     <TextView
-        android:id="@+id/foundDigit"
-        style="@style/receivedText"
-        android:layout_width="314dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="124dp"
-        android:firstBaselineToTopHeight="50dp"
-        android:freezesText="true"
-        android:text="@string/result_text"
+        android:id="@+id/resulText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/info_result_text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resulText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
